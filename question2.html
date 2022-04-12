@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+   <form>
+   <h3>Question-2</h3>
+   Enter First Number: <input type="text" id="firstnum" /><br><br>
+   Enter second Number: <input type="text" id="secondnum" /><br><br>
+   <input type="button" onClick="multifun()" Value="Multiply" />
+   <input type="button" onClick="divfun()" Value="Divide" />
+   </form>
+   <p>The Result is : <br>
+   <p id = "result"></p>
+   </p>
+  <script type="text/javascript">
+  function multifun()
+    {
+     n1 = document.getElementById("firstnum").value;
+     n2 = document.getElementById("secondnum").value;
+     document.getElementById("result").innerHTML = n1 * n2;
+    }
+    function divfun()
+    {
+     n1 = document.getElementById("firstnum").value;
+     n2 = document.getElementById("secondnum").value;
+     document.getElementById("result").innerHTML = n1 / n2;
+    }
+    </script>
+</body>
+</html>
